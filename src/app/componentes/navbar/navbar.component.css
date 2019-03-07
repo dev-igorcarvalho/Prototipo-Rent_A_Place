@@ -1,0 +1,21 @@
+.navbar-custom{
+    background-image: url('../../../assets/images/bg_1.jpg') ;
+    
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.barra-busca{
+    width: 355px;
+    color: white;
+    background-color: rgba(155, 155, 155, 0.4);
+    border-color: transparent !important;
+}
+
+.barra-busca:focus {
+    background-color: rgba(155, 155, 155, 0.6);
+}

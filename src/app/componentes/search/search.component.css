@@ -1,0 +1,30 @@
+.titulo {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.filters {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.filter {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    /* padding-top: 5px; */
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.filter-title {
+    padding-top: 5px;
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+.font-small {
+    font-size: 12px !important;
+    margin-right: 20px;
+}

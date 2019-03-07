@@ -1,0 +1,23 @@
+<div class="result-card" (click)="navigate(result.id)">
+
+  <div class="row">
+    <div class="col-4">
+      <img [src]="result.fotoUrl" class="main-img">
+    </div>
+
+    <div class="col-4 d-flex align-items-center">
+      <div style="margin-left: -20px;">
+        <p style="font-size: 12px">{{result.title}}</p>
+        <p style="font-size: 8px">* * * * * </p>
+        <p style="font-size: 8px">{{result.distance}} km from you</p>
+        <p style="font-size: 10px">@ - ${{result.price}}</p>
+      </div>
+
+    </div>
+
+    <div class="col-4">
+      <img [src]="result.fotoMap" class="map-img">
+    </div>
+
+  </div>
+</div>

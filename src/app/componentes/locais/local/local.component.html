@@ -1,0 +1,37 @@
+<div class="local-card" (click)="navigate(local.id)">
+  <div class="row">
+    <div class="col-9">
+      <img [src]="local.fotoUrl" class="main-img">
+    </div>
+
+    <div class="col-3">
+      <div class="row">
+        <div class="col">
+          <p style="font-size: 20px;
+          width: 100%;
+             position: relative;
+             left: -45px; 
+             top:30px;
+             display: flex;
+             justify-content: end;
+             transform: rotate(270deg)">{{local.bairro}} </p>
+
+          <div style="float: right; position: relative; top:-25px; left: -20px;
+          font-size: 12px;">
+            <p style="font-style: 12px">* * * * * </p>
+            <p style="font-style: 12px">{{local.distance}} km</p>
+            <p>ICON</p>
+            <p>${{local.price}}</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-end" style="padding-right: 20px; padding-bottom: 5px;">
+          <p>@ # $ %</p>
+          <p>@ # $ %</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

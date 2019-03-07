@@ -1,0 +1,41 @@
+.filters {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+.filter {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    /* padding-top: 5px; */
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.filter-title {
+    padding-top: 5px;
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+.font-small {
+    font-size: 12px !important;
+    margin-right: 10px;
+}
+
+.search-button {
+         /* The image used */
+         background-image: url('../../../../assets/images/logo.png');
+    
+         /* Full height */
+         height: 100%;
+         width: 200%; 
+
+         position: relative;
+         top: 15px;
+         left: -25px;
+
+       
+         /* Create the parallax scrolling effect */
+         background-repeat: no-repeat;
+         background-size: 80%;
+}

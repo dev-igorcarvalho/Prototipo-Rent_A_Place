@@ -1,0 +1,47 @@
+.backGround-container {
+    /* z-index: -1;
+    position: fixed; */
+     /* The image used */
+  background-image: url('../assets/images/west_virginia.jpg');
+
+  /* Full height */
+  height: 100%; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foreGroundContainer {
+    /* index */
+    z-index: 3;
+    /* size */
+    height: 80%; 
+    width: 100%;
+    /* bg-color */
+    /* background-color: aqua !important; */
+    background-color: transparent !important;
+
+    padding-left: 120px;
+    padding-right: 10px;
+
+}
+
+.barra-busca{
+    width: 230%;
+    color: white;
+    background-color: rgba(155, 155, 155, 0.5);
+    border-color: transparent !important;
+}
+
+.barra-busca:focus {
+    background-color: rgba(155, 155, 155, 1);
+}
+
+.card-transparente {
+    background-color: rgba(155, 155, 155, 0.5);
+    margin-top: 30px;
+}

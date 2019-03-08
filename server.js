@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/angularApp/'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/angularApp/index.html'));
+res.sendFile(path.join(__dirname+'/dist/angularApp/home.html'));
 });
 
 // Start the app by listening on the default Heroku port

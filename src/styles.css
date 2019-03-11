@@ -1,11 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+@font-face {
+    font-family: 'kabeln';
+    src: url('../src/assets/fonts/kabeln-webfont.eot');
+    src: url('../src/assets/fonts/kabeln-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../src/assets/fonts/kabeln-webfont.woff2') format('woff2'),
+         url('../src/assets/fonts/kabeln-webfont.woff') format('woff'),
+         url('../src/assets/fonts/kabeln-webfont.ttf') format('truetype'),
+         url('../src/assets/fonts/kabeln-webfont.svg#kabel_bk_btbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nucleo';
+    src: url('../src/assets/fonts/nucleo.eot');
+    src: url('../src/assets/fonts/nucleo.eot?#iefix') format('embedded-opentype'),
+         url('../src/assets/fonts/nucleo.woff2') format('woff2'),
+         url('../src/assets/fonts/nucleo.woff') format('woff'),
+         url('../src/assets/fonts/nucleo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* You can add global styles to this file, and also import other style files */
 body{
         /* z-index: -1;
         position: fixed; */
          /* The image used */
-      background-image: url('./assets/images/bg_1.jpg');
+      background-image: url('./assets/images/bg_blur.jpg');
     
       /* Full height */
       height: 100%; 
@@ -16,7 +40,7 @@ body{
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'kabeln' !important;
 }
 
 .card-transparente {
@@ -25,3 +49,4 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
+

@@ -1,20 +1,21 @@
 <nav class="navbar-custom navbar fixed-top">
   <div class="container">
     <div class="row">
-      <div class="col-6">
-        <span class="navbar-text" style="width: 200px">
-          <p>
+      <div class="col-4">
+        <span class="navbar-text" style="width: 200px" (click)="goHome()">
+          <img src="../../../assets/images/logos/logo_topo.png" class="main-img" height="40px;">
+          <!-- <p>
             NAPP
           </p>
           <p style="margin-left: 15px; font-size: 12px;" > 
             to <span style="margin-left: 5px; font-size: 16px;"> GO</span>
-          </p>
+          </p> -->
         </span>
 
       </div>
-      <div class="col-6 d-flex justify-content-end">
+      <div class="col-8 d-flex justify-content-end">
         <ul style="list-style-type: none; margin-top: 10px;">
-          <li style="text-align: end">
+          <li style="text-align: end" (click)="open()"> 
             icons $ % &
           </li>
           <li style="text-align: end">

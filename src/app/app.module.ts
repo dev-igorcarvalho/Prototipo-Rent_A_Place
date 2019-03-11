@@ -17,11 +17,14 @@ import { ResultComponent } from './componentes/search/result/result.component';
 import { FiltersComponent } from './componentes/search/filters/filters.component';
 import { FiltersPlusComponent } from './componentes/search/filters-plus/filters-plus.component';
 import { DetalhesComponent } from './componentes/detalhes/detalhes.component';
+import { CadastroComponent } from './componentes/cadastro/cadastro.component';
+import { SidebarComponent } from './componentes/sidebar/sidebar.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent },
   {path: 'search', component: SearchComponent },
   {path: 'place/:id', component: DetalhesComponent },
+  {path: 'signup', component: CadastroComponent },
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
@@ -40,6 +43,8 @@ const appRoutes: Routes = [
     FiltersComponent,
     FiltersPlusComponent,
     DetalhesComponent,
+    CadastroComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,

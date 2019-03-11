@@ -24,7 +24,7 @@ export class DetalhesComponent implements OnInit {
     }
   }
 
-  logoButton: string = '../../../../assets/images/logo.png'
+  logoButton: string = '../../../assets/images/logos/gonapp.png'
 
   paramId: string;
   local: Local;

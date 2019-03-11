@@ -29,7 +29,7 @@ body{
         /* z-index: -1;
         position: fixed; */
          /* The image used */
-      background-image: url('./assets/images/bg_blur.jpg');
+      background-image: url('./assets/images/bg_blur.jpg') no-repeat center center fixed;
     
       /* Full height */
       height: 100%; 
@@ -39,7 +39,11 @@ body{
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       background-size: cover;
+      overflow: hidden;
       font-family: 'kabeln' !important;
 }
 

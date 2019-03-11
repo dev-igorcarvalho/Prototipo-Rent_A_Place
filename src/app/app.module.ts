@@ -20,6 +20,9 @@ import { DetalhesComponent } from './componentes/detalhes/detalhes.component';
 import { CadastroComponent } from './componentes/cadastro/cadastro.component';
 import { SidebarComponent } from './componentes/sidebar/sidebar.component';
 
+//external libraries
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent },
   {path: 'search', component: SearchComponent },
@@ -48,7 +51,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

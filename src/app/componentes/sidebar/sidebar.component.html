@@ -5,6 +5,7 @@
       <div class="row">
         <div class="col-4">
           <span class="navbar-text" style="width: 200px">
+            <fa style="margin-right: 10px; filter: invert(100%);" name="ellipsis-v" size="2x" (click)="open()"></fa>
             <img src="../../../assets/images/logos/logo_topo.png" class="main-img" height="40px;" style="filter: invert(100%)">
             <!-- <p>
                 NAPP
@@ -20,10 +21,25 @@
     </div>
   </nav>
   <ul style="list-style-type: none">
-    <li class="li-itens">COUNTRY</li>
-    <li class="li-itens">LANGUAGE</li>
-    <li class="li-itens">CURRENCY</li>
-    <li class="li-itens">HELP</li>
-    <li class="li-itens">LOG OUT</li>
+    <li class="li-itens">
+      <fa name="globe"></fa>
+      COUNTRY
+    </li>
+    <li class="li-itens">
+      <fa name="language"></fa>
+      LANGUAGE
+    </li>
+    <li class="li-itens" style="padding-left: 3px;">
+      <fa name="dollar" style="padding-right: 4px;"></fa>
+      CURRENCY
+    </li>
+    <li class="li-itens" style="padding-left: 3px;">
+      <fa name="question" style="padding-right: 4px;"></fa>
+      HELP
+    </li>
+    <li class="li-itens">
+      <fa name="sign-out"></fa>
+      LOG OUT
+    </li>
   </ul>
 </div>

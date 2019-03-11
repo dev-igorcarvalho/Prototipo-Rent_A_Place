@@ -2,8 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-4">
-        <span class="navbar-text" style="width: 200px" (click)="goHome()">
-          <img src="../../../assets/images/logos/logo_topo.png" class="main-img" height="40px;">
+        <span class="navbar-text" style="width: 200px" >
+            <fa style="margin-right: 10px;" name="ellipsis-v" size="2x" (click)="open()"></fa>
+          <img src="../../../assets/images/logos/logo_topo.png" class="main-img" height="40px;" (click)="goHome()">
           <!-- <p>
             NAPP
           </p>
@@ -15,8 +16,11 @@
       </div>
       <div class="col-8 d-flex justify-content-end">
         <ul style="list-style-type: none; margin-top: 10px;">
-          <li style="text-align: end" (click)="open()"> 
-            icons $ % &
+          <li style="text-align: end">
+            <fa style="margin-right: 20px;" name="hand-o-up" size="lg"></fa>
+            <!-- <fa name="hand-pointer-o"></fa> -->
+            <fa style="margin-right: 20px;" size="lg" name="pencil"></fa>
+            <fa name="user-o" size="lg"></fa>
           </li>
           <li style="text-align: end">
             Welcome, Marcio

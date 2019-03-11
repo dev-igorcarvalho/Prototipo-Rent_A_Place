@@ -16,12 +16,18 @@
              justify-content: end;
              transform: rotate(270deg)">{{local.bairro}} </p>
 
-          <div style="float: right; position: relative; top:-25px; left: -20px;
+          <div style="float: right; position: relative; top:-25px; left: -5px;
           font-size: 12px;">
-            <p style="font-style: 12px">* * * * * </p>
+            <p style="color: white;">
+                <fa name="star"></fa>
+                <fa name="star"></fa>
+                <fa name="star"></fa>
+                <fa name="star"></fa>
+                <fa name="star"></fa>
+            </p>
             <p style="font-style: 12px">{{local.distance}} km</p>
-            <p>ICON</p>
-            <p>${{local.price}}</p>
+            <p><fa name="clock-o"></fa></p>
+            <p><fa name="dollar" style="margin-right: 5px;"></fa>{{local.price}}</p>
           </div>
 
         </div>

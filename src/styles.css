@@ -26,24 +26,7 @@
 
 /* You can add global styles to this file, and also import other style files */
 body{
-        /* z-index: -1;
-        position: fixed; */
-         /* The image used */
-      background-image: url('./assets/images/bg_blur.jpg') no-repeat center center fixed;
     
-      /* Full height */
-      height: 100%; 
-      width: 100%;
-    
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      overflow: hidden;
       font-family: 'kabeln' !important;
 }
 

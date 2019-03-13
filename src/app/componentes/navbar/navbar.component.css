@@ -1,16 +1,24 @@
 .navbar-custom{
-    background-image: url('../../../assets/images/bg_1.jpg') ;
+    background-image: url('../../../assets/images/Capturar.JPG') ;
     
-    
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+    /* Full height */
+    /* height: 100%; 
+    width: 100%; */
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 50% 85%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .barra-busca{
-    width: 355px;
+    width: 100%;
     color: white;
     background-color: rgba(155, 155, 155, 0.4);
     border-color: transparent !important;

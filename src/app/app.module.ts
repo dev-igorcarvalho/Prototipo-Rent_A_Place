@@ -22,11 +22,16 @@ import { SidebarComponent } from './componentes/sidebar/sidebar.component';
 
 //external libraries
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { CheckoutComponent } from './componentes/checkout/checkout.component';
+import { DetailsComponent } from './componentes/checkout/details/details.component';
+import { PaymentComponent } from './componentes/checkout/payment/payment.component';
+import { ExtrasComponent } from './componentes/checkout/extras/extras.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent },
   {path: 'search', component: SearchComponent },
   {path: 'place/:id', component: DetalhesComponent },
+  {path: 'checkout/:id', component: CheckoutComponent },
   {path: 'signup', component: CadastroComponent },
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
@@ -48,6 +53,10 @@ const appRoutes: Routes = [
     DetalhesComponent,
     CadastroComponent,
     SidebarComponent,
+    CheckoutComponent,
+    DetailsComponent,
+    PaymentComponent,
+    ExtrasComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 .navbar-custom{
-    background-image: #00BBF0 url('../../../assets/images/Capturar.JPG') ;
+    /* background-image: url('../../../assets/images/Capturar.JPG') ; */
+    /* background-color: #00BBF0; */
+    background: #00BBF0  url('../../../assets/images/Capturar.JPG') ;
     
     /* Full height */
     /* height: 100%; 

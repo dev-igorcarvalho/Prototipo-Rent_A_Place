@@ -13,4 +13,12 @@ export class NavigateService {
     let redirectTO = '/place/'+id;
     this.router.navigateByUrl(redirectTO);
   }
+
+  proceedCheckout(id: number) {
+    console.warn(id);
+    let redirectTO = '/checkout/'+id;
+    // this.router.navigateByUrl(redirectTO);
+    
+    this.router.navigate( [redirectTO ], {fragment: 'start'});
+  }
 }

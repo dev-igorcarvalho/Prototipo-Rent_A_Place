@@ -1,0 +1,40 @@
+<div id="" class="card-transparente" style="padding-bottom: 10px;"  fragment="start">
+  <div class="d-flex justify-content-start">
+    <p class="titulo">Choose payment method</p>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="d-inline-flex align-items-center">
+      <div class="payment-tag" [ngClass]="{'payment-tag-active' : master}" (click)="selection('master')">
+        <fa name="cc-mastercard"></fa>
+      </div>
+      <div class="payment-tag" [ngClass]="{'payment-tag-active' : visa}" (click)="selection('visa')">
+        <fa name="cc-visa"></fa>
+      </div>
+      <div class="payment-tag" [ngClass]="{'payment-tag-active' : discover}" (click)="selection('discover')">
+        <fa name="cc-discover"></fa>
+      </div>
+      <div class="payment-tag" [ngClass]="{'payment-tag-active' : money}" (click)="selection('money')">
+        <fa name="money" size="lg"></fa>
+      </div>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center" style="margin-top:10px;">
+    <div class="d-inline-flex justify-content-center">
+      <div class="payment-tag" [ngClass]="{'payment-tag-active' : stripe}" (click)="selection('stripe')">
+        <fa name="cc-stripe"></fa>
+      </div>
+      <div class="payment-tag " [ngClass]="{'payment-tag-active' : amex}" (click)="selection('amex')">
+        <fa name="cc-amex"></fa>
+      </div>
+      <div class="payment-tag" [ngClass]="{'payment-tag-active' : dinners}" (click)="selection('dinners')">
+        <fa name="cc-diners-club"></fa>
+      </div>
+      <div class="payment-tag d-flex justify-content-center" style="width: 65px;"
+      [ngClass]="{'payment-tag-active' : paypal}" (click)="selection('paypal')">
+        <fa name="paypal"></fa>
+      </div>
+    </div>
+  </div>
+</div>

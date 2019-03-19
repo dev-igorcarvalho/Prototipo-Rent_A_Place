@@ -35,7 +35,7 @@
           <fa style="padding-right:3px" name="shower" size="lg"></fa>
           <fa style="padding-right: 3px" name="tv" size="lg"></fa>
           <fa style="padding-right: 0px" name="thermometer-0" size="lg"></fa>
-          - shower, tv, air conditioner
+          - shower, tv, air-conditioner
         </p>
         <p style="font-size: 12px">{{local.description}}</p>
       </div>
@@ -52,27 +52,27 @@
       </div>
 
       <div class="col-9 d-inline-flex align-items-center" style="margin-top: -5px;">
-        <div class="price-tag">
+        <div class="price-tag" [ngClass]="{'price-tag-active' : time15}" (click)="select('time15')">
           <p class="price-tag-text d-flex justify-content-center" style="font-size: 6px">15 min</p>
           <p class="price-tag-text d-flex justify-content-center" style="font-size: 12px; font-weight: 900; ">$ 20</p>
         </div>
 
-        <div class="price-tag">
+        <div class="price-tag" [ngClass]="{'price-tag-active' : time30}" (click)="select('time30')">
           <p class="price-tag-text d-flex justify-content-center" style="font-size: 6px">30 min</p>
           <p class="price-tag-text d-flex justify-content-center" style="font-size: 12px; font-weight: 900; ">$ 30</p>
         </div>
 
-        <div class="price-tag price-tag-active">
+        <div class="price-tag" [ngClass]="{'price-tag-active' : time45}" (click)="select('time45')">
           <p class="price-tag-text d-flex justify-content-center" style="font-size: 6px">45 min</p>
           <p class="price-tag-text d-flex justify-content-center" style="font-size: 12px; font-weight: 900; ">$ 40</p>
         </div>
 
-        <div class="price-tag">
+        <div class="price-tag" [ngClass]="{'price-tag-active' : time60}" (click)="select('time60')">
           <p class="price-tag-text d-flex justify-content-center" style="font-size: 6px">60 min</p>
           <p class="price-tag-text d-flex justify-content-center" style="font-size: 12px; font-weight: 900; ">$ 50</p>
         </div>
 
-        <div class="price-tag ">
+        <div class="price-tag " [ngClass]="{'price-tag-active' : time90}" (click)="select('time90')">
           <p class="price-tag-text d-flex justify-content-center " style="font-size: 6px">90 min</p>
           <p class="price-tag-text d-flex justify-content-center" style="font-size: 12px; font-weight: 900; ">$ 70</p>
         </div>
@@ -86,24 +86,23 @@
       </div>
 
       <div class="col-9 d-inline-flex align-items-center" style="margin-top: -5px; margin-bottom: 10px;">
-        <div class="price-tag price-tag-active">
+        <div class="price-tag " [ngClass]="{'price-tag-active' : shower}" (click)="select('shower')">
           <p class="price-tag-text d-flex justify-content-center " style="font-size: 16px"><fa name="shower" ></fa></p>
         </div>
 
-        <div class="price-tag price-tag-active">
+        <div class="price-tag price-tag-active" [ngClass]="{'price-tag-active' : tv}" (click)="select('tv')">
             <p class="price-tag-text d-flex justify-content-center " style="font-size: 16px"><fa name="tv"></fa></p>
         </div>
 
-        <div class="price-tag ">
+        <div class="price-tag " [ngClass]="{'price-tag-active' : gamepad}" (click)="select('gamepad')">
             <p class="price-tag-text d-flex justify-content-center " style="font-size: 16px"><fa name="gamepad"></fa></p>
         </div>
 
-        <div class="price-tag">
-            
+        <div class="price-tag" [ngClass]="{'price-tag-active' : air}" (click)="select('air')">
             <p class="price-tag-text d-flex justify-content-center " style="font-size: 16px"><fa name="thermometer-0"></fa></p>
         </div>
 
-        <div class="price-tag price-tag-active">
+        <div class="price-tag" [ngClass]="{'price-tag-active' : wifi}" (click)="select('wifi')">
             <p class="price-tag-text d-flex justify-content-center " style="font-size: 16px"><fa name="wifi"></fa></p>
         </div>
       </div>
@@ -114,7 +113,7 @@
 
 <div class="row d-flex justify-content-center" style="margin-top: 20px; margin-bottom: 20px;">
   <div class="col-5">
-    <img [src]="logoButton" class="main-img">
+    <img [src]="logoButton" class="main-img" (click)="goCheckOut(local.id)">
   </div>
 </div>
 

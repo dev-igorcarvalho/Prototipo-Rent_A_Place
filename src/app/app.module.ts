@@ -26,6 +26,9 @@ import { CheckoutComponent } from './componentes/checkout/checkout.component';
 import { DetailsComponent } from './componentes/checkout/details/details.component';
 import { PaymentComponent } from './componentes/checkout/payment/payment.component';
 import { ExtrasComponent } from './componentes/checkout/extras/extras.component';
+import { CadastroLocalComponent } from './componentes/cadastro-local/cadastro-local.component';
+import { ExperienciasComponent } from './componentes/experiencias/experiencias.component';
+import { ExperienciaComponent } from './componentes/experiencias/experiencia/experiencia.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent },
@@ -33,6 +36,7 @@ const appRoutes: Routes = [
   {path: 'place/:id', component: DetalhesComponent },
   {path: 'checkout/:id', component: CheckoutComponent },
   {path: 'signup', component: CadastroComponent },
+  {path: 'register', component: CadastroLocalComponent },
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
@@ -57,6 +61,9 @@ const appRoutes: Routes = [
     DetailsComponent,
     PaymentComponent,
     ExtrasComponent,
+    CadastroLocalComponent,
+    ExperienciasComponent,
+    ExperienciaComponent,
   ],
   imports: [
     BrowserModule,

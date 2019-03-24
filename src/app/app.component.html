@@ -1,3 +1,4 @@
 <div class="backGround-container"></div>
 
-<app-aplicacao></app-aplicacao>
+<app-splash *ngIf="loading"></app-splash>
+<app-aplicacao *ngIf="app" ></app-aplicacao>

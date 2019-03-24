@@ -1,0 +1,12 @@
+<div class="row" style="padding-top: 140px;">
+  <div class="col-12 d-flex justify-content-center">
+    <p style="font-size: 14px;"><span style="font-weight: 900; font-size: 18px;">NAPP to GO</span> nearest you</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="scrolling-wrapper">
+    <div *ngFor="let local of localDataSource" class="card" (click)="navigate(local.id)">
+      <app-experiencia [local]="local"></app-experiencia>
+    </div>
+</div>

@@ -25,6 +25,10 @@ export class NavbarComponent implements OnInit {
     this.router.navigateByUrl("/home");
   }
 
+  goTo(url: string) {
+    this.router.navigateByUrl(url);
+  }
+
   open() {
     this.sidebarService.openNav();
   }

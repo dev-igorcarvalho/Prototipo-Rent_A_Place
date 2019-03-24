@@ -21,4 +21,8 @@ export class NavigateService {
     
     this.router.navigate( [redirectTO ], {fragment: 'start'});
   }
+
+  goTO(url: string){
+    this.router.navigateByUrl(url);
+  }
 }

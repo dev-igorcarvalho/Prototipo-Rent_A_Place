@@ -17,6 +17,9 @@
     background-size: cover;
     padding-left: 0px;
     padding-right: 0px;
+
+    transition: top 0.3s;
+    display: block;
 }
 
 .barra-busca{

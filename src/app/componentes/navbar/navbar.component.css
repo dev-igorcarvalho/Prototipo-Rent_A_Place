@@ -1,14 +1,15 @@
 .navbar-custom{
     /* background-image: url('../../../assets/images/Capturar.JPG') ; */
     /* background-color: #00BBF0; */
-    background: #00BBF0  url('../../../assets/images/Capturar.JPG') ;
+    /* background: #00BBF0  url('../../../assets/images/Capturar.JPG') ; */
     
     /* Full height */
     /* height: 100%; 
     width: 100%; */
   
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+
+    /* background-attachment: fixed;
     background-position: 50% 85%;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -16,19 +17,27 @@
     -o-background-size: cover;
     background-size: cover;
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 0px; */
 
     transition: top 0.3s;
     display: block;
 }
 
+#custom-gradient {
+    padding: 15px, 20px, 15px, 20px;
+    background-color: transparent !important;
+    background-image: -moz-linear-gradient (rgba(0, 90, 130, 1), rgba(0, 117, 168, 0.9) ,rgba(0, 158, 227,0.8));
+    background-image: linear-gradient ( rgba(0, 90, 130, 1), rgba(0, 117, 168, 0.9) ,rgba(0, 158, 227,0.8));
+    background-image: -webkit-linear-gradient(rgba(0, 90, 130, 1), rgba(0, 117, 168, 0.9) ,rgba(0, 158, 227,0.8));
+}
+
 .barra-busca{
     width: 100%;
     color: white;
-    background-color: rgba(155, 155, 155, 0.4);
+    background-color: rgba(155, 155, 155, 0.7);
     border-color: transparent !important;
 }
 
 .barra-busca:focus {
-    background-color: rgba(155, 155, 155, 0.6);
+    background-color: rgba(200, 200, 200, 0.95);
 }

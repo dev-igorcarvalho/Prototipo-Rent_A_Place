@@ -1,7 +1,7 @@
 .sidenav {
     background-color: rgba(255, 255, 255, 0.95);
     height: 100%;
-    left: 0;
+    left: -15px;
     overflow-x: hidden;
     /* padding-top: 60px; */
     position: fixed;
@@ -18,7 +18,8 @@
   
   .sidenav .closebtn {
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 120px;
+    margin-top: -10px;
     position: absolute;
     right: 25px;
     top: 0;

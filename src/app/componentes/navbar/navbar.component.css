@@ -36,6 +36,7 @@
     color: white;
     background-color: rgba(155, 155, 155, 0.7);
     border-color: transparent !important;
+    border-radius: 0;
 }
 
 .barra-busca:focus {

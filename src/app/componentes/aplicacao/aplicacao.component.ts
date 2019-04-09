@@ -10,7 +10,7 @@ export class AplicacaoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    document.body.requestFullscreen();
+    
   }
 
 }

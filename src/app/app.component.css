@@ -167,6 +167,36 @@
       }
     }
 
+    .iphone-background-fix {
+        z-index: -1;
+        position: fixed;
+         /* The image used */
+         /* background: #00BBF0 url('../assets/images/bg_blur.jpg') no-repeat center center fixed ; */
+         /* background-color: green; */
+    
+         overflow: hidden;
+         /* Full height */
+         height: 812px; 
+         width: 100%;
+       
+         /* Create the parallax scrolling effect */
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         -webkit-background-size: 100% 812px;
+         -moz-background-size: 100% 812px;
+         -o-background-size: 100% 812px;
+         background-size: 100% 812px;
+    }
+
+    .iphone-img-fix {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        min-width: 100%;
+        min-height: 100%
+    }
 
    
 

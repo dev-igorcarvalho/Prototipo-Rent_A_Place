@@ -17,8 +17,8 @@
       <div class="col-8 d-flex justify-content-end">
         <ul style="list-style-type: none; margin-top: 10px;">
           <li style="text-align: end">
+            <fa style="margin-right: 20px;" name="arrows-alt" size="lg" (click)="fullScreen()" *ngIf="!fullScreenMode"></fa>
             <fa style="margin-right: 20px;" name="sign-in" size="lg" (click)="goTo('/signup')"></fa>
-            <!-- <fa name="hand-pointer-o"></fa> -->
             <fa style="margin-right: 20px;" size="lg" name="pencil" (click)="goTo('/register')"></fa>
             <fa name="user-o" size="lg"></fa>
           </li>

@@ -11,7 +11,10 @@ export class NavbarComponent implements OnInit {
 
   constructor(private router: Router, private sidebarService: SidebarServiceService) { }
 
+  fullScreenMode: boolean;
+
   ngOnInit() {
+    this.fullScreenMode = false;
     window.addEventListener('scroll', this.scroll, true);
   }
 
@@ -52,5 +55,15 @@ export class NavbarComponent implements OnInit {
   }
   close() {
     this.sidebarService.closeNav();
+  }
+
+  fullScreen() {
+    this.fullScreenMode = !this.fullScreenMode;
+    let elem = document.documentElement;
+    let methodToBeInvoked = elem.requestFullscreen
+      || elem['mozRequestFullscreen']
+      || elem['msRequestFullscreen'];
+    if (methodToBeInvoked) methodToBeInvoked.call(elem);
+    console.log('chamou fullscreen');
   }
 }

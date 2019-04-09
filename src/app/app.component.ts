@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     this.app = false;
     setTimeout(
       () =>
-      this.swap(),
+        this.swap(),
       500);
   }
 
@@ -25,6 +25,4 @@ export class AppComponent implements OnInit {
     this.loading = !this.loading;
     this.app = !this.app;
   }
-  
-
 }

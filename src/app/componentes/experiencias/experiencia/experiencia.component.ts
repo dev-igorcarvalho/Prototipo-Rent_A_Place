@@ -8,14 +8,23 @@ import { NavigateService } from 'src/app/services/navigate.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
-
-  constructor() { }
-
+  
+  constructor(private navigateService: NavigateService) { }
+  
+  localOrMap = false;
+  
   ngOnInit() {
   }
-
+  
   @Input()
   local: Local;
 
+  navigate(id: number) {
+    this.navigateService.navigate(id);
+  }
+
+  switchLocalToMap() {
+    this.localOrMap = !this.localOrMap;
+  }
 
 }

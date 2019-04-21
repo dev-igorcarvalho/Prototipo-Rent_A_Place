@@ -3,6 +3,7 @@ export class Local {
   id: number;
   title: string;
   subTitle: string;
+  shortTips: string;
   description: string;
   fotoUrl: string;
   fotoMap: string

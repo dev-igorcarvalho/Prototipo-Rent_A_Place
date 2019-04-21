@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     setTimeout(
       () =>
         this.swap(),
-      500);
+      2000);
   }
 
   loading: boolean;

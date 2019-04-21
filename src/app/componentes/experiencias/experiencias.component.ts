@@ -13,7 +13,7 @@ export class ExperienciasComponent implements OnInit {
   constructor(private dataSource: DataSourceService, private navigateService: NavigateService) { }
 
   ngOnInit() {
-    this.localDataSource = this.dataSource.localDataSource;
+    this.localDataSource = this.dataSource.localDataSourceAroundYou;
   }
 
   localDataSource: Local[];

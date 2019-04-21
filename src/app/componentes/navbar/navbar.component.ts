@@ -24,9 +24,12 @@ export class NavbarComponent implements OnInit {
     let currentScrollPos = window.pageYOffset;
     // console.log('the prev scrol is - ' + this.prevScrollpos + ' , the current scroll is - ' + currentScrollPos);
 
-    if (this.prevScrollpos > currentScrollPos) {
+    if (currentScrollPos <= 0) {
       document.getElementById("navbar").style.top = "0";
       // console.log("if");
+    } else if (this.prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+      // console.log("else if");
     } else {
       document.getElementById("navbar").style.top = "-70px";
       // console.log("else");

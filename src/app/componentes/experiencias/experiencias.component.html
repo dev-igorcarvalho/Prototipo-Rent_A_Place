@@ -6,9 +6,8 @@
 
 <div class="row">
   <div class="scrolling-wrapper">
-    <div *ngFor="let local of localDataSource" class="card" >
+    <div *ngFor="let local of localDataSource" class="card" > <!-- (click)="navigate(local.id)" -->
       <app-experiencia [local]="local"></app-experiencia>
     </div>
 </div>
 
-<!-- (click)="navigate(local.id)" -->

@@ -11,6 +11,8 @@ export class LocalComponent implements OnInit {
 
   constructor(private navigateService: NavigateService) { }
 
+  
+
   ngOnInit() {
   }
 
@@ -20,4 +22,6 @@ export class LocalComponent implements OnInit {
   navigate(id: number) {
     this.navigateService.navigate(id);
   }
+
+ 
 }

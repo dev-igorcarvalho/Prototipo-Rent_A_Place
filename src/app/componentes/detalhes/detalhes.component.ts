@@ -16,6 +16,7 @@ export class DetalhesComponent implements OnInit {
     private route: ActivatedRoute, private navigateService: NavigateService) { }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
     let localDataSource = this.dataSource.localDataSource;
     this.paramId = this.route.snapshot.params['id'];
     for (let local of localDataSource) {
@@ -54,6 +55,9 @@ export class DetalhesComponent implements OnInit {
   gamepad: boolean;
   air: boolean;
   wifi: boolean;
+
+  
+  localOrMap = false;
 
 
 
@@ -136,5 +140,9 @@ export class DetalhesComponent implements OnInit {
       }
     }
 
+  }
+
+  switchLocalToMap() {
+    this.localOrMap = !this.localOrMap;
   }
 }

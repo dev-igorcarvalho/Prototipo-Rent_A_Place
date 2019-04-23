@@ -85,3 +85,9 @@
 ::placeholder {
     color: white;
     opacity: 0.8; /* Firefox */}
+
+.round {
+    width: auto;
+    height: 70px; 
+    border-radius: 100%;
+}

@@ -25,7 +25,7 @@
       <div class="col-4 d-flex justify-content-center align-items-center" style="color: white">
         <!-- <fa name="map"></fa> -->
         <!-- <fa name="map-o" size="2x"  data-toggle="modal" data-target="#mapModal"></fa> -->
-        <fa name="map-o" size="2x"  *ngIf="localOrMap === false" (click)="switchLocalToMap()"></fa>
+        <fa name="map-o" size="2x" *ngIf="localOrMap === false" (click)="switchLocalToMap()"></fa>
         <fa name="home" size="3x" *ngIf="localOrMap === true" (click)="switchLocalToMap()"></fa>
         <!-- <fa name="map-signs"></fa> -->
         <!-- <fa name="map-pin"></fa> -->
@@ -129,6 +129,43 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</div>
+
+<div id="" class="card-detalhe" style="margin-top: 5px;">
+  <div id="" class="card-descricao">
+    <p style="font-size: 16px">About the host</p>
+    <div class="row" style="padding-left: 10px;">
+      <div class="col-4">
+        <img src="../../../assets/images/blank-user.jpg" class="round">
+      </div>
+      <div class="col-8 d-flex justify-content-start align-items-center">
+        <div>
+          <ul style="list-style-type: none;">
+            <li class="li-itens-portrait" style="color: white;">
+              <p style="color: white;">
+                <fa name="star"></fa>
+                <fa name="star"></fa>
+                <fa name="star"></fa>
+                <fa name="star"></fa>
+                <fa name="star"></fa>
+              </p>
+            </li>
+            <li class="li-itens-portrait" style="color: white;">
+              Host since: 3 months
+            </li>
+            <li class="li-itens-portrait" style="color: white;">
+              Nappers hosted: 127
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p style="color: white"> Nome de usuario </p>
+      </div>
     </div>
   </div>
 </div>

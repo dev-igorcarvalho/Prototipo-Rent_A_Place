@@ -14,19 +14,20 @@ export class CheckoutComponent implements OnInit {
   constructor(private dataSource: DataSourceService,
     private route: ActivatedRoute, private navigateService: NavigateService) { }
 
- ngOnInit() {
-   let localDataSource = this.dataSource.localDataSource;
-   this.paramId = this.route.snapshot.params['id'];
-   for (let local of localDataSource) {
-     if (local.id ===  parseInt(this.paramId)){
-       this.local = local;
-     }
-   }
- }
+  ngOnInit() {
+    window.scrollTo(0, 0);
+    let localDataSource = this.dataSource.localDataSource;
+    this.paramId = this.route.snapshot.params['id'];
+    for (let local of localDataSource) {
+      if (local.id === parseInt(this.paramId)) {
+        this.local = local;
+      }
+    }
+  }
 
- logoButton: string = '.../../../../../assets/images/logos/confirm.png'
+  logoButton: string = '.../../../../../assets/images/logos/confirm.png'
 
- paramId: string;
- local: Local;
+  paramId: string;
+  local: Local;
 
 }

@@ -39,3 +39,14 @@
     }
   }
   
+  .round {
+    width: auto;
+    height: 70px;
+    border-radius: 100%;
+  }
+
+  .li-itens-portrait {
+    color: black;
+    
+  }
+

@@ -28,3 +28,22 @@
     font-size: 12px !important;
     margin-right: 20px;
 }
+
+.card::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 5px;
+  }
+
+  .searchMap {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    padding-top: 5px;
+    /* padding-top: 5px; */
+}

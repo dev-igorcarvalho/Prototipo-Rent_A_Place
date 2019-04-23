@@ -11,10 +11,16 @@ export class SearchComponent implements OnInit {
 
   constructor( private dataSource: DataSourceService) {}
 
+  showMap:boolean;
+
   ngOnInit() {
+    this.showMap = false;
     this.results = this.dataSource.localDataSource;
   }
 
   results: Local[] ;
 
+  exibirMapa(){
+    this.showMap = !this.showMap;
+  }
 }

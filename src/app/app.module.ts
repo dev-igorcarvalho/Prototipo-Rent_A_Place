@@ -29,6 +29,7 @@ import { ExtrasComponent } from './componentes/checkout/extras/extras.component'
 import { CadastroLocalComponent } from './componentes/cadastro-local/cadastro-local.component';
 import { ExperienciasComponent } from './componentes/experiencias/experiencias.component';
 import { ExperienciaComponent } from './componentes/experiencias/experiencia/experiencia.component';
+import { MapSearchComponent } from './componentes/search/map-search/map-search.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent },
@@ -64,6 +65,7 @@ const appRoutes: Routes = [
     CadastroLocalComponent,
     ExperienciasComponent,
     ExperienciaComponent,
+    MapSearchComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,15 @@
   <app-filters-plus></app-filters-plus>
 </div>
 
-<div id="" class="card-transparente">
+
+<div id="" class="searchMap" (click)="exibirMapa()">
+  <p class="titulo" style="padding-bottom: 10px;">
+    <fa name="map-o" style="color: white; margin-right: 15px; margin-left: 15px;"></fa>Clic here to use a Map
+  </p>
+  <app-map-search *ngIf="showMap"></app-map-search>
+</div>
+
+<div id="" class="card-transparente" style="margin-top: 20px;">
   <div class="d-flex justify-content-start">
     <p class="titulo">Results</p>
   </div>

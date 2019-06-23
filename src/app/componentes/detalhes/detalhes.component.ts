@@ -56,11 +56,22 @@ export class DetalhesComponent implements OnInit {
   air: boolean;
   wifi: boolean;
 
-  
+
   localOrMap = false;
+  imgOffice = false;
 
 
-
+  trocarParaOffice() {
+    if (this.local.id === 2) {
+      if (this.imgOffice == false) {
+        this.local.fotoUrl = "../../../assets/images/office.jpg";
+        this.imgOffice = !this.imgOffice;
+      } else {
+        this.local.fotoUrl = "../../../assets/images/local6.jpg";
+        this.imgOffice = !this.imgOffice;
+      }
+    }
+  }
 
   goCheckOut(id: number) {
     this.navigateService.proceedCheckout(id);
